@@ -35,7 +35,7 @@ function Item({ id, metadataID }) {
 }
 function GetAllItems({ user, balance }) {
   const tokenIds = [];
-  for (let i = 0; i < balance.toNumber(); i++) {
+  for (let i = 0; i < balance?.toNumber(); i++) {
     tokenIds.push({
       address: NFT_CONTRACT_ADDRESS,
       abi: NFT_ABI,
